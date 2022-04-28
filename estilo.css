@@ -1,0 +1,269 @@
+:root{
+    --amarelo:#FFCB47;
+    --branco:#FFFFFF;
+    --cinza:#909090;
+    --preto:#202020;
+    --amarelo-trasparente:#FFCB473D;
+
+    --famiia-corpo:'Montserrat',sans-serif;
+    --tamanho-corpo:1rem;
+    --tamanho-titulo:1.375rem;
+    --tamanho-titulo-destaque:2rem;
+    --familia-destaque:'Elsie Swash Caps',sans-serif;
+    --peso-titulo:900;
+
+}
+body{
+    font-family: var(--famiia-corpo);
+    font-size: var(--tamanho-corpo);
+    background: url(fundo-linhas.png), url(fundo-textura.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--cinza);
+}
+
+
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 100%;
+    padding-top: .55rem;
+    padding-bottom: .55rem;
+}
+.cabecalho-logo{
+    width: 11.125rem;
+    padding-bottom: 0.8rem;
+}
+.cabecalho-carrinho{
+    width: 1.75rem;
+}
+.container{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.chamada{
+    padding-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    background-image: url(../store_plantas/icones/splash-chamada.svg);
+    background-position: top -4rem right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.chamada-texto{
+    width: 11.5rem;
+    margin-bottom: 4.2rem;
+    position: right;
+}
+
+    
+
+.chamada-formulario{
+    position: relative;
+    z-index: 2;
+}
+.input{
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+
+    width: 100%;
+
+    padding-top:1.75rem;
+    padding-right:1.75rem;
+    padding-bottom:1.75rem;
+    padding-left:1.75rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: var(--branco);
+    box-shadow:10px 10px 30px #0000000F ;
+}
+.input-icon{
+    padding-left: 4.25rem;
+    background-repeat: no-repeat;
+    background-position: left 1.75rem center;
+}
+.input-email{
+    background-image: url(../store_plantas/icones/mail.svg);
+    background-repeat: no-repeat;
+    background-position: left 0.2rem center;
+}
+.cartao{
+    box-sizing: border-box;
+    padding-top:2rem ;
+    padding-bottom: 2rem;
+    background-color: var(--branco);
+    box-shadow: 10px 10px 30px #0000000F;
+}
+.titulo{
+    font-size: var(--tamanho-titulo);
+}
+.titulo-destaque{
+    font-family: var(--familia-destaque);
+    color: var(--preto);
+    font-size:var(--tamanho-titulo-destaque);
+    font-weight: var(--peso-titulo);
+    display: block;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+}
+.alinhamento{
+    text-align: right ;
+    right: 100%;
+}
+
+.alinhamento-esquerda{
+    text-align: left;
+
+}
+.alinhamento-meio{
+    text-align: center;
+}
+.texto{
+    line-height: 26px;
+}
+.lista-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item{
+    width: 15rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+.item-icone{
+    display: block;
+    margin-right : 1rem;
+    width: 3.25rem;
+    border-radius: 50%;
+    background-color: var(--amarelo);
+    background-size: 1.375rem;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.item-icone-seta{
+    background-image: url(../store_plantas/icones/mouse.svg);
+}
+.item-icone-carrinho{
+    background-image: url(../store_plantas/icones/carrinho.png);
+}
+.item-icone-caminhao{
+    background-image: url(../store_plantas/icones/truck.svg);
+}
+.produto{
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 50%;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--branco);
+    box-shadow: 10px 10px 30px #0000000F;
+    box-sizing: border-box;
+    min-height: 12.5rem;
+}
+.produto-imagem{
+    position: absolute;
+    top: 50%;
+    left: -8rem;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 18.75rem;
+}
+.produto-conteudo{
+    position: relative;
+    z-index: 2;
+}
+.peoduto-titulo{
+    margin-top: 0;
+    margin-bottom: .5rem;
+
+}
+.produto-preco{
+    margin-bottom: 1.5rem;
+}
+.produto-comprar{
+    color: var(--amarelo);
+    display: flex;
+    align-items: center;
+}
+.produto-comprar-icone{
+    display: inline-block;
+    width: 0.875rem;
+    height:0.875rem ;
+    margin-left: 1.75rem;
+   
+    background-size: contain;
+}
+.cartao-video{
+    margin-bottom: 2rem;
+}
+.cartao-video-video{
+    position: relative;
+    width: 100%;
+    max-height: 17.5rem;
+    overflow: hidden;
+    margin-bottom: .5rem;
+}
+.cartao-video-video::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    width: 4.875rem;
+    height: 4.875rem;
+    border-radius: 50%;
+    background-color: var(--branco);
+    background-image: url(../store_plantas/icones/play.svg);
+    background-repeat: no-repeat;
+    background-size: 1.75rem;
+    background-position: center left 55%;
+}
+.cartao-video-titulo{
+    color: var(--preto);
+    font-size:1.375rem;
+    font-weight:700rem;
+    margin-bottom: .5rem;
+}
+.rodape{
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+    background-color: var(--branco);
+    background-image: url(../store_plantas/icones/splash-rodape.svg);
+    background-position:right;
+    background-repeat: no-repeat;
+}
+.rodape-logo{
+    max-width: 11.125rem;
+    margin-bottom: 1.25rem;
+}
+.rodape-midias{
+   display: flex;
+   margin-bottom: 2rem;
+}
+.rodape-social-midia{
+    display: inline-block;
+    width: 1.625rem;
+    height: 1.625rem;
+    margin-right: 1.625rem;
+}
+.rodape-unidade{
+    margin-bottom: 2rem;
+
+}
+.rodape-unidade-titulo{
+    color: var(--preto);
+    font-size: 1.375rem;
+    font-weight:700rem;
+    display: block;
+    margin-bottom: .5rem;
+}
